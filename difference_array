@@ -1,0 +1,39 @@
+void t2(){
+
+int n;
+cin>>n;
+int a[n];
+
+arin(a,0,n);
+
+
+int q;
+cin>>q;
+vi dif(n+1,0);
+while(q--){
+
+    int l,r,v;
+    cin>>l>>r>>v;
+    dif[l]+=v;
+    dif[r+1]-=v;
+
+    pn(dif,n+1);
+
+}
+pn(dif,n+1);
+for(int i=1;i<=n;i++){
+
+    dif[i]=dif[i-1]+dif[i];
+}
+pn(dif,n+1);
+
+for(int i=0;i<n;i++){
+    a[i]=a[i]+dif[i];
+
+}
+
+pn(a,n);
+
+
+
+}
