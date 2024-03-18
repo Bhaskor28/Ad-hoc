@@ -1,0 +1,31 @@
+    void s2(){
+
+    string s;
+    cin>>s;
+    cout<<s<<endl;
+    sort(s.begin(),s.end());
+    while(next_permutation(s.begin(),s.end())){
+
+        cout<<s<<endl;
+
+    }
+
+    }
+    void s3(){
+
+    int n;
+    cin>>n;
+    vi vp(n,0);
+
+    arin(vp,0,n);
+
+    sort(vp.begin(),vp.end());
+
+    while(next_permutation(vp.begin(),vp.end())){
+
+        pn(vp,n);
+
+    }
+
+
+    }
